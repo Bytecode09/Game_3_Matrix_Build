@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Game 5</title>
+    <title>Unity WebGL Player | Game 3</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script type="text/javascript">
+     <script type="text/javascript">
       function sendMessageToFlutter(jsonData) {
       console.log("Sending data to flutter: " + jsonData)
       Flutter.postMessage(jsonData);
@@ -31,7 +31,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Game 5</div>
+        <div id="unity-build-title">Game 3</div>
       </div>
     </div>
     <script>
@@ -68,14 +68,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Figure_WT.loader.js";
+      var loaderUrl = buildUrl + "/Matrix.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Figure_WT.data.unityweb",
-        frameworkUrl: buildUrl + "/Figure_WT.framework.js.unityweb",
-        codeUrl: buildUrl + "/Figure_WT.wasm.unityweb",
+        dataUrl: buildUrl + "/Matrix.data.unityweb",
+        frameworkUrl: buildUrl + "/Matrix.framework.js.unityweb",
+        codeUrl: buildUrl + "/Matrix.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Game 5",
+        productName: "Game 3",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -110,7 +110,8 @@
       }
 
       loadingBar.style.display = "block";
-      var script = document.createElement("script");
+
+       var script = document.createElement("script");
       
       var gameInstance = null;
       script.src = loaderUrl;
